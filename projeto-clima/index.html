@@ -4,18 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clima</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="Styles/styles-all.css">
 </head>
 <body>
-    <h1>Hello Wolrd</h1>
+    <header>
+        <h1>Previsão do tempo</h1>
+    </header>
+    <main>
+        <div class="buscar-cidade">
+            <input type="text" name="input-cidade" id="input-cidade" placeholder="Busque a cidade">
+            <button class="search-button" onclick="SearchButton()">
+                <span class="material-symbols-outlined">search</span>
+            </button>
+        </div>
+        <div class="resposta">
+            <p id="res">
 
-    <div>
-        <input type="text" name="cidade" id="input-cidade">
-        <button onclick="SearchButton()">GO</button>
-    </div>
-
-    <div>
-        <p id="res"></p>
-    </div>
+            </p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;2025 Raphael.Dev - Todos os direitos reservados.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
