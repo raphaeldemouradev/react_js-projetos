@@ -25,7 +25,7 @@ main {
     background-color: #0071ce;
 }
 
-div.buscar-cidade {
+section.buscar-cidade {
     display: block;
     text-align: center;
     padding: 10px 0px;
@@ -37,6 +37,7 @@ input[type=text] {
     border-radius: 20px;
     height: 40px;
     padding: 6px;
+    font-size: 1em;
 }
 
 button.search-button {
@@ -49,13 +50,29 @@ button.search-button {
 }
 
 button.search-button span {
-    font-size: 14px;
+    font-size: 20px;
 }
 
-div.resposta {
-    background-color: #1cbfd4;
+/* Resposta */
+section.resposta {
+    background-color: #00395f;
     width: 100%;
     height: 200px;
+}
+
+div.content-cidade {
+    padding: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
+
+div.content-info p#res-graus {
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    font-weight: 600;
+    margin-top: 10px;
 }
 
 footer {

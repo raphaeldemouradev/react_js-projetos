@@ -4,20 +4,22 @@ async function buscarCidade(cidade) {
     const dados = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${key}&lang=pt_br&units=metric`).then(resposta => resposta.json());
 
     colocaDadosNaTela(dados);
-    console.log("Dados encontrados!")
+    console.log("Dados encontrados!");
 }
 
 function colocaDadosNaTela(dados) {
-    let res = document.getElementById("res")
+    let resCidade = document.getElementById("res-cidade");
+    let resGraus = document.getElementById("res-graus");
 
-    res.innerHTML = "Tempo em " + dados.name;
+    resCidade.innerHTML = "Tempo em " + dados.name + ":";
+    resGraus.innerHTML = Number.parseInt(dados.main.temp) + "°C";
 
-    console.log("Completo!")
+    console.log("Completo!");
 }
 
 function SearchButton() {
-    let cidade = document.getElementById("input-cidade").value
+    let cidade = document.getElementById("input-cidade").value;
 
     buscarCidade(cidade);
-    console.log("Procurando: " + cidade)
+    console.log("Procurando: " + cidade);
 }

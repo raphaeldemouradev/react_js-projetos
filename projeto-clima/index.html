@@ -12,17 +12,20 @@
         <h1>Previsão do tempo</h1>
     </header>
     <main>
-        <div class="buscar-cidade">
+        <section class="buscar-cidade">
             <input type="text" name="input-cidade" id="input-cidade" placeholder="Busque a cidade">
             <button class="search-button" onclick="SearchButton()">
                 <span class="material-symbols-outlined">search</span>
             </button>
-        </div>
-        <div class="resposta">
-            <p id="res">
-
-            </p>
-        </div>
+        </section>
+        <section class="resposta">
+            <div class="content-cidade">
+                <p id="res-cidade">Cidade</p>
+            </div>
+            <div class="content-info">
+                <p id="res-graus">00°C</p>
+            </div>
+        </section>
     </main>
     <footer>
         <p>&copy;2025 Raphael.Dev - Todos os direitos reservados.</p>
