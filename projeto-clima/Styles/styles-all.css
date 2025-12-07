@@ -103,10 +103,23 @@ p#res-tempo {
 section.container-next-day {
     background-color: #00395f;
     width: 100%;
-    height: 200px;
+    height: 180px;
     margin-top: 10px;
+    display: flex;
+    overflow: scroll;
 }
 
+div.model-content {
+    background-color: #00000077;
+    color: white;
+    display: block;
+    width: 100px;
+    height: 150px;
+    margin: auto 10px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
 
 /* Footer */
 footer {
