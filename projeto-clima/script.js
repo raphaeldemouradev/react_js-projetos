@@ -13,7 +13,7 @@ function colocaDadosNaTela(dados) {
     let resImg = document.getElementById("res-img")
     let resTempo = document.getElementById("res-tempo");
 
-    resCidade.innerHTML = "Tempo em " + dados.name + ":";
+    resCidade.innerHTML = dados.name;
     resGraus.innerHTML = Number.parseInt(dados.main.temp) + "°C";
     resImg.src = `https://openweathermap.org/img/wn/${dados.weather[0].icon}.png`;
     resTempo.innerHTML = dados.weather[0].description;

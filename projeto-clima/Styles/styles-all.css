@@ -21,11 +21,12 @@ header h1 {
 
 main {
     width: 100%;
-    height: 100vh;
+    height: 96vh;
     background-color: #0071ce;
 }
 
-section.buscar-cidade {
+/* Search Area */
+section.container-search {
     display: block;
     text-align: center;
     padding: 10px 0px;
@@ -57,18 +58,19 @@ button.search-button span {
     font-size: 20px;
 }
 
-/* Resposta */
-section.resposta {
+/* Resposta Area */
+section.container-resposta {
     background-color: #00395f;
     width: 100%;
     height: 200px;
 }
 
-div.content-cidade {
-    padding: 10px;
-    font-size: 1.5em;
+div.city-return {
+    padding: 10px 0px 10px 10px;
+    font-size: 22px;
     font-weight: bold;
     color: white;
+    display: flex;
 }
 
 div.content-info {
@@ -97,6 +99,16 @@ p#res-tempo {
     color: white;
 }
 
+/*  Proximos Dias */
+section.container-next-day {
+    background-color: #00395f;
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+}
+
+
+/* Footer */
 footer {
     padding: 10px;
     background-color: black;

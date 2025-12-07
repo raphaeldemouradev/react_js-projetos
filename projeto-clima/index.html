@@ -12,14 +12,16 @@
         <h1>Previsão do tempo</h1>
     </header>
     <main>
-        <section class="buscar-cidade">
+        <section class="container-search">
             <input type="text" name="input-cidade" id="input-cidade" placeholder="Busque a cidade">
             <button class="search-button" onclick="SearchButton()">
                 <span class="material-symbols-outlined">search</span>
             </button>
         </section>
-        <section class="resposta">
-            <div class="content-cidade">
+
+        <section class="container-resposta">
+            <div class="city-return">
+                <span class="material-symbols-outlined">location_on</span>
                 <p id="res-cidade">Cidade</p>
             </div>
             <div class="content-info">
@@ -29,6 +31,12 @@
             <div>
                 <p id="res-tempo">"Informe a cidade"</p>
             </div>
+        </section>
+
+        <section class="container-next-day">
+            <p>Dia 0</p>
+            <img alt="" id="res-img">
+            <p id="res-graus">00 °C</p>
         </section>
     </main>
     <footer>
