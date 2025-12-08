@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
     padding: 0px;
     margin: 0px;
@@ -27,8 +29,8 @@ main {
 
 /* Search Area */
 section.container-search {
-    display: block;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     padding: 10px 0px;
 }
 
@@ -41,28 +43,26 @@ input[type=text] {
     font-size: 1em;
 }
 
-button.search-button {
+button.button-area {
+    text-align: center;
     background-color: #259dff;
     border: 1px solid black;
     border-radius: 50%;
     cursor: pointer;
     width: 35px;
     height: 35px;
+    margin-left: 5px;
 }
 
-button.search-button:hover {
+button.button-area:hover {
     background-color: #00395f;
-}
-
-button.search-button span {
-    font-size: 20px;
 }
 
 /* Resposta Area */
 section.container-resposta {
     background-color: #00395f;
-    width: 100%;
-    height: 200px;
+    width: 360px;
+    height: 400px;
 }
 
 div.city-return {
@@ -100,11 +100,8 @@ p#res-tempo {
 }
 
 /*  Proximos Dias */
-section.container-next-day {
-    background-color: #00395f;
-    width: 100%;
-    height: 150px;
-    margin-top: 10px;
+article.container-next-day {
+    margin-top: 100px;
     display: flex;
     flex-direction: row;
     overflow-x: scroll;

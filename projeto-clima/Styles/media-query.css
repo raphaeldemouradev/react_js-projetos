@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    /* Search Area */
+    section.container-search {
+        padding: 20px 0px;
+    }
+
+    input[type=text] {
+        border: 2px solid black;
+        border-radius: 20px;
+        font-size: 1.5em;
+    }
+
+    button.button-area {
+        border: 2px solid black;
+        width: 40px;
+        height: 40px;
+    }
+
+    button.button-area span {
+        font-size: 30px;
+    }
+
+    /* Resposta Area */
+    section.container-resposta {
+        display: block;
+        margin: auto;
+        border-radius: 10px;
+    }   
+}
+
+@media screen and (min-width: 992px) {
+    /* Search Area */
+    section.container-search {
+        padding: 20px 0px;
+    }
+
+    input[type=text] {
+        border: 2px solid black;
+        border-radius: 20px;
+        font-size: 1.5em;
+    }
+
+    button.button-area {
+        border: 2px solid black;
+        width: 40px;
+        height: 40px;
+    }
+
+    button.button-area span {
+        font-size: 30px;
+    }
+
+    /* Resposta Area */
+    section.container-resposta {
+        display: block;
+        margin: auto;
+        border-radius: 10px;
+    }   
+}

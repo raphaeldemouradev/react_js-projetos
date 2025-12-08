@@ -6,6 +6,7 @@
     <title>Clima</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="Styles/styles-all.css">
+    <link rel="stylesheet" href="Styles/media-query.css">
 </head>
 <body>
     <header>
@@ -14,7 +15,7 @@
     <main>
         <section class="container-search">
             <input type="text" name="input-cidade" id="input-cidade" placeholder="Busque a cidade">
-            <button class="search-button" onclick="SearchButton()">
+            <button class="button-area" onclick="SearchButton()">
                 <span class="material-symbols-outlined">search</span>
             </button>
         </section>
@@ -22,48 +23,47 @@
         <section class="container-resposta">
             <div class="city-return">
                 <span class="material-symbols-outlined">location_on</span>
-                <p id="res-cidade">Cidade</p>
+                <p id="res-cidade">...</p>
             </div>
             <div class="content-info">
-                <img alt="img" id="res-img">
-                <p id="res-graus">00°C</p>
+                <img alt="" id="res-img">
+                <p id="res-graus"></p>
             </div>
             <div>
                 <p id="res-tempo">"Informe a cidade"</p>
             </div>
-        </section>
 
-        <section class="container-next-day">
-            <div class="model-content" id="dia-1">
-                <p class="dia-titulo">Dia 1</p>
-                <img alt="img" class="dia-img">
-                <p class="dia-temp">00 °C</p>
-            </div>
+            <article class="container-next-day">
+                <div class="model-content" id="dia-1">
+                    <p class="dia-titulo">Dia 1</p>
+                    <img alt="" class="dia-img">
+                    <p class="dia-temp">...</p>
+                </div>
 
-            <div class="model-content" id="dia-2">
-                <p class="dia-titulo">Dia 2</p>
-                <img alt="img" class="dia-img">
-                <p class="dia-temp">00 °C</p>
-            </div>
+                <div class="model-content" id="dia-2">
+                    <p class="dia-titulo">Dia 2</p>
+                    <img alt="" class="dia-img">
+                    <p class="dia-temp">...</p>
+                </div>
 
-            <div class="model-content" id="dia-3">
-                <p class="dia-titulo">Dia 3</p>
-                <img alt="img" class="dia-img">
-                <p class="dia-temp">00 °C</p>
-            </div>
+                <div class="model-content" id="dia-3">
+                    <p class="dia-titulo">Dia 3</p>
+                    <img alt="" class="dia-img">
+                    <p class="dia-temp">...</p>
+                </div>
 
-            <div class="model-content" id="dia-4">
-                <p class="dia-titulo">Dia 4</p>
-                <img alt="img" class="dia-img">
-                <p class="dia-temp">00 °C</p>
-            </div>
+                <div class="model-content" id="dia-4">
+                    <p class="dia-titulo">Dia 4</p>
+                    <img alt="" class="dia-img">
+                    <p class="dia-temp">...</p>
+                </div>
 
-            <div class="model-content" id="dia-5">
-                <p class="dia-titulo">Dia 5</p>
-                <img alt="img" class="dia-img">
-                <p class="dia-temp">00 °C</p>
-            </div>
-
+                <div class="model-content" id="dia-5">
+                    <p class="dia-titulo">Dia 5</p>
+                    <img alt="" class="dia-img">
+                    <p class="dia-temp">...</p>
+                </div>
+            </article>
         </section>
     </main>
     <footer>
