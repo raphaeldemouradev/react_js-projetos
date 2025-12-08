@@ -26,15 +26,12 @@ async function buscarCidade(endPoint, cidade) {
     return dados;
 }
 
-// posssivel essa funçao nao estar fazendo nada
 async function endPoint(cidade) { //renderiza endPoint no console
     const tempoData = await buscarCidade('weather', cidade)
 
     console.log(tempoData)
 }
 
-
-//Dar uma olhada aqui mais tarde "Tive ajuda da i.a"
 function colocaDadosNaTela(dados) {
     let resCidade = document.getElementById("res-cidade");
     let resGraus = document.getElementById("res-graus");
@@ -46,8 +43,8 @@ function colocaDadosNaTela(dados) {
     resImg.src = `https://openweathermap.org/img/wn/${dados.list[0].weather[0].icon}.png`;
     resTempo.innerHTML = dados.list[0].weather[0].description;
 
-    // Renderizar próximos 4 dias
-    for (let i = 0; i < 4; i++) {
+    // Renderizar próximos 5 dias
+    for (let i = 0; i < 5; i++) {
         const dia = dados.list[i * 8]; // A cada 8 posições são ~24h depois
         const diaDiv = document.getElementById(`dia-${i + 1}`);
         
