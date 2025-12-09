@@ -44,13 +44,30 @@ function colocaDadosNaTela(dados) {
     resTempo.innerHTML = dados.list[0].weather[0].description;
 
     // Renderizar próximos 5 dias
-    for (let i = 0; i < 5; i++) {
-        const dia = dados.list[i * 8]; // A cada 8 posições são ~24h depois
-        const diaDiv = document.getElementById(`dia-${i + 1}`);
-        
-        diaDiv.querySelector('.dia-img').src = `https://openweathermap.org/img/wn/${dia.weather[0].icon}.png`;
-        diaDiv.querySelector('.dia-temp').innerHTML = Number.parseInt(dia.main.temp) + " °C";
+    const semana = document.querySelectorAll('.dia-titulo');
+    for (let i = 0; i < semana.length ; i++) {
+        const elementoSemana = semana[i];
+
+        const data = new Date();
+        const dia = data.getDate() + i + 1;
+        const mes = data.getMonth() + 1;
+
+        elementoSemana.innerHTML = `${dia}/${mes}`;
+        console.log(elementoSemana);
     }
 
+    const imgs = document.querySelectorAll('.dia-img');
+    for (let i = 0; i < imgs.length ; i++) {
+        const img = imgs[i];
+        img.src = `https://openweathermap.org/img/wn/${dados.list[i * 8].weather[0].icon}.png`; // Pega o ícone
+    }
+
+    const temps = document.querySelectorAll('.dia-temp');
+    for (let i = 0; i < temps.length ; i++) {
+        const temp = temps[i];
+
+        temp.innerHTML = Number.parseInt(dados.list[i * 8].main.temp) + "°C"; // Pega a temperatura
+        
+    }
     console.log("Completo!");
 }
