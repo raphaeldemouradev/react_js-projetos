@@ -63,6 +63,9 @@ section.container-resposta {
     background-color: #00395f;
     width: 360px;
     height: 400px;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
 }
 
 div.city-return {
@@ -81,6 +84,7 @@ div.content-info {
 }
 
 div.content-info p#res-graus {
+    display: block;
     font-size: 3em;
     font-weight: 600;
     margin-top: 10px;

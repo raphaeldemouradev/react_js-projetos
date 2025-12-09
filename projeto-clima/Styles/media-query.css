@@ -23,11 +23,25 @@
     }
 
     /* Resposta Area */
+    div.content-resposta {
+        position: relative;
+    }
+
     section.container-resposta {
-        display: block;
-        margin: auto;
+        position: absolute;
         border-radius: 10px;
+        transform: translate(50%, 50%);
+        right: 50%;
+        top: 50%;
     }   
+
+    div.content-info {
+        margin-top: 10px;
+    }
+
+    p#res-tempo {
+        font-size: 1.2em;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -53,9 +67,23 @@
     }
 
     /* Resposta Area */
+    div.content-resposta {
+        position: relative;
+    }
+
     section.container-resposta {
-        display: block;
-        margin: auto;
+        position: absolute;
         border-radius: 10px;
+        transform: translate(50%, 50%);
+        right: 50%;
+        top: 50%;
     }   
-}
+
+    div.content-info {
+        margin-top: 10px;
+    }
+
+    p#res-tempo {
+        font-size: 1.2em;
+    }
+}   
