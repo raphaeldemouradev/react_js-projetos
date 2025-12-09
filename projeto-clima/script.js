@@ -37,11 +37,18 @@ function colocaDadosNaTela(dados) {
     let resGraus = document.getElementById("res-graus");
     let resImg = document.getElementById("res-img")
     let resTempo = document.getElementById("res-tempo");
+    let dataAtual = document.querySelector('.data-atual');
 
     resCidade.innerHTML = dados.city.name;
     resGraus.innerHTML = Number.parseInt(dados.list[0].main.temp) + "°C";
     resImg.src = `https://openweathermap.org/img/wn/${dados.list[0].weather[0].icon}.png`;
     resTempo.innerHTML = dados.list[0].weather[0].description;
+
+    const data = new Date();
+    const dia = data.getDate();
+    const mes = data.getMonth() + 1;
+
+    dataAtual.innerHTML = `${dia}/${mes}`;
 
     // Renderizar próximos 5 dias
     const semana = document.querySelectorAll('.dia-titulo');

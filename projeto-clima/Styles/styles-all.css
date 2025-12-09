@@ -61,19 +61,31 @@ button.button-area:hover {
 /* Resposta Area */
 section.container-resposta {
     background-color: #00395f;
-    width: 400px;
+    width: 360px;
     height: 400px;
     display: block;
     margin: auto;
     border-radius: 10px;
 }
 
-div.city-return {
-    padding: 10px 0px 10px 10px;
+article.city-return {
+    padding: 10px 10px 10px 5px;
     font-size: 22px;
     font-weight: bold;
     color: white;
+    justify-content: space-between;
     display: flex;
+    align-items: center;
+}
+
+div.city-area {
+    display: flex;
+    text-align: left;
+}
+
+p.data-atual {
+    display: flex;
+    text-align: right;
 }
 
 div.content-info {

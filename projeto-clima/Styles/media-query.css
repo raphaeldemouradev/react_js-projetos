@@ -23,14 +23,14 @@
     }
 
     /* Resposta Area */
-    div.content-resposta {
+    main {
         position: relative;
     }
 
     section.container-resposta {
         position: absolute;
         border-radius: 10px;
-        transform: translate(50%, 25%);
+        transform: translate(50%, -50%);
         right: 50%;
         top: 50%;
     }   
@@ -67,16 +67,17 @@
     }
 
     /* Resposta Area */
-    div.content-resposta {
+    main {
         position: relative;
     }
 
     section.container-resposta {
         position: absolute;
         border-radius: 10px;
-        transform: translate(50%, 25%);
+        transform: translate(50%, -50%);
         right: 50%;
         top: 50%;
+        width: 550px;
     }   
 
     div.content-info {
