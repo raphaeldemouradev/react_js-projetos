@@ -8,27 +8,66 @@
         * {
             font-family: Arial, Helvetica, sans-serif;
             box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
         }
 
-        a {
-            background-color: #00b7ff;
-            color: black;
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+
+        header {
+            padding: 10px 0px 10px 10px;
+        }
+
+        div {
+            margin: 10px 0px 10px 10px;
+        }
+
+        button {
+            background-color: #cfcfcf;
             padding: 10px;
             border-radius: 10px;
             font-weight: bold;
             transition: .3s;
         }
 
-        a:hover {
-            box-shadow: 5px 5px 2px black;
+        button.clima {
+            background-color: #00b7ff;
+        }
+
+        button.filme {
+            background-color: #686868;
+        }
+
+        a {
+            color: black; 
+            font-size: 1.2em;
+        }
+
+        button:hover {
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
             transition: .3s;
         }
     </style>
 </head>
 <body>
-    <h1>Seja Bem vindo(a)</h1>
-    <p>Confira meus Hyper Projetos com React.js a baixo:</p>
-    <br>
-    <a href="https://raphaeldemouradev.github.io/react_js-projetos/projeto-clima/" target="_blank">Climatico</a>
+    <header>
+        <h1>Seja Bem vindo(a)</h1>
+        <p>Confira meus Hyper Projetos com React.js a baixo:</p>
+    </header>
+    <main>
+        <div>
+            <button class="clima">
+                <a href="https://raphaeldemouradev.github.io/react_js-projetos/projeto-clima/" target="_blank">Climatico</a>
+            </button>
+        </div>
+        <div>
+            <button class="filme">
+                <a href="https://raphaeldemouradev.github.io/react_js-projetos/catalogo-filmes/catalogo-filmes/">Catalogo de Filmes</a>
+            </button>
+        </div>
+    </main>
 </body>
 </html>
