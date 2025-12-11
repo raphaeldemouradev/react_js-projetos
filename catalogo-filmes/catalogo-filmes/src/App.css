@@ -7,9 +7,6 @@ button {
     background-color: #505050;
     padding: 5px;
     border-radius: 10px;
-}
-
-a {
-    text-decoration: none;
     color: white;
+    cursor: pointer;
 }
