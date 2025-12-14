@@ -10,7 +10,7 @@ function Model() {
     return (
         <div className='contentModel'>
           <div className='imgModel'>
-            <img src="" alt="img" />  
+            <img src="#" alt="img" />  
           </div>  
           
           <div className='detailsModel'>
