@@ -1,9 +1,11 @@
-function SearchButton() {
+const search = document.getElementById("SearchButton");
+
+search.addEventListener("click", () => {
     let cidade = document.getElementById("input-cidade").value;
 
     buscarCidade('forecast', cidade);
     console.log("Procurando: " + cidade);
-}
+});
 
 document.addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
@@ -11,7 +13,6 @@ document.addEventListener('keydown', function (event) {
         buscarCidade('forecast', cidade);
     }
 });
-
 
 const key = "6f689218d9446702bdd80d7aa57ac4c6";
 
