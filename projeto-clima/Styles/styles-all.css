@@ -7,12 +7,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body { 
-    background: #259dff;
-    height: 96vh;
+body, html { 
+    background-image: linear-gradient(to top, #004883, #259dff);
+    height: 100%;
     width: 100%;
-    background: url(../imagens/background.jpg) no-repeat center center;
-    background-size: cover;
 }
 
 header {
@@ -152,11 +150,9 @@ p.dia-temp {
 /* Footer */
 footer {
     padding: 10px 0px;
-    background-color: rgb(0, 0, 0);
     color: white;
     text-align: center;
     font-size: 0.9em;
-    margin-top: 18%;
 }
 
 footer a {
