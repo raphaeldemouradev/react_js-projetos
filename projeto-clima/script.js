@@ -1,10 +1,14 @@
+// Entrada Campo
 const search = document.getElementById("SearchButton");
-
 search.addEventListener("click", () => {
     let cidade = document.getElementById("input-cidade").value;
 
-    buscarCidade('forecast', cidade);
-    console.log("Procurando: " + cidade);
+    if (cidade == "") {
+        alert("Informe a CIDADE")
+    } else {
+        buscarCidade('forecast', cidade);
+        console.log("Procurando: " + cidade);
+    }
 });
 
 document.addEventListener('keydown', function (event) {
@@ -13,6 +17,7 @@ document.addEventListener('keydown', function (event) {
         buscarCidade('forecast', cidade);
     }
 });
+// Entrada Campo
 
 const key = "6f689218d9446702bdd80d7aa57ac4c6";
 
@@ -35,12 +40,14 @@ async function endPoint(cidade) { //renderiza endPoint no console
 
 function colocaDadosNaTela(dados) {
     let resCidade = document.getElementById("res-cidade");
+    let resIconLocal = document.getElementById("iconLocal");
     let resGraus = document.getElementById("res-graus");
     let resImg = document.getElementById("res-img")
     let resTempo = document.getElementById("res-tempo");
     let dataAtual = document.querySelector('.data-atual');
 
     resCidade.innerHTML = dados.city.name;
+    resIconLocal.innerHTML = "location_on";
     resGraus.innerHTML = Number.parseInt(dados.list[0].main.temp) + "°C";
     resImg.src = `https://openweathermap.org/img/wn/${dados.list[0].weather[0].icon}.png`;
     resTempo.innerHTML = dados.list[0].weather[0].description;

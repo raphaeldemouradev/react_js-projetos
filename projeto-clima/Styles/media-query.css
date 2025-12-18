@@ -19,13 +19,12 @@
 
     /* Resposta Area */
     section.container-resposta {
-        height: 450px;
         min-width: 360px;
         max-width: 400px;
     }
 
     div.content-info {
-        margin-top: 10px;
+        padding: 10px 0px;
     }
 
     p#res-tempo {
@@ -40,12 +39,12 @@
 @media screen and (min-width: 992px) {
     /* Search Area */
     section.container-search {
-        padding: 20px 0px ;
+        padding: 10px 0px ;
     }
 
     input[type=text] {
         border: 2px solid black;
-        font-size: 1.6em;
+        font-size: 1.4em;
     }
 
     button.button-area {
@@ -60,12 +59,11 @@
 
     /* Resposta Area */
     section.container-resposta {
-        height: 470px;
         max-width: 600px;
     }   
 
     div.content-info {
-        margin-top: 10px;
+        padding: 10px 0px;
     }
 
     p#res-tempo {
