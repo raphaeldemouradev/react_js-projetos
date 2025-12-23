@@ -1,24 +1,37 @@
 @charset "UTF-8";
 
+div.containerModel {
+    background-color: green;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 div.contentModel {
     background-color: #ff0000;
     width: 120px;
-    height: 150px;
+    height: 180px;
     border: 1px solid beige;
     margin: 5px;
     border-radius: 10px;
     overflow: hidden;
 }
 
-div.imgModel {
+div.imgModel { /* Atras da imagem*/
     width: 100%;
-    height: 110px;
+    height: 150px;
 }
 
-div.detailsModel {
+div.imgModel img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+div.detailsModel { /* backgraund atras do botao */
     background-color: #161616;
     width: 100%;
-    height: 40px;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
