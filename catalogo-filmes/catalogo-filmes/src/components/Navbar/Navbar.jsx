@@ -6,6 +6,7 @@ function Navbar() {
     function Navega() {
         funcNav('/Search')
     }
+
     return (
         <div className='contentNav'>
             <div className='containerNav'>
@@ -13,7 +14,7 @@ function Navbar() {
             </div>
             <div className='searchArea'>
                 <input type="text" />
-                <button onClick={Navega}>O</button>
+                <button onClick={Navega}>🔎</button>
             </div>
         </div>
     )
