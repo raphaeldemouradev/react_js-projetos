@@ -26,7 +26,7 @@ function Navbar() {
             <section className='title-nav'>
                 <h3>LOGTV</h3>
             </section>
-            <div className='searchArea'>
+            <section className='search-area'>
                 <input 
                     type="text"
                     placeholder='Search Movie' 
@@ -40,7 +40,7 @@ function Navbar() {
                     type='submit'
                     >search
                 </span>
-            </div>
+            </section>
         </div>
     )
 }

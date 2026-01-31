@@ -24,3 +24,5 @@ const router = createBrowserRouter([
 ])
 
 export default router 
+
+//tinha arquivos nesta pasta movi para pages
