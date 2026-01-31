@@ -4,6 +4,7 @@ import './StylesNavbar.css';
 
 function Navbar() {
     const funcNav = useNavigate()
+
     function Navega() {
         if (search == "") {
             alert("Erro de Busca")
@@ -12,21 +13,33 @@ function Navbar() {
         }
     }
 
+    const keyEnter = (event) => {
+        if (event.key === 'Enter') {
+            Navega();
+        }
+    }
+
     const [search, setSearch] = useState('');
 
     return (
-        <div className='contentNav'>
-            <div className='containerNav'>
+        <div className='container-nav'>
+            <section className='title-nav'>
                 <h3>LOGTV</h3>
-            </div>
+            </section>
             <div className='searchArea'>
                 <input 
                     type="text"
                     placeholder='Search Movie' 
                     value={search}
                     onChange={(event) => setSearch(event.target.value)}
+                    onKeyDown={keyEnter}
                 />
-                <span class="material-symbols-outlined" onClick={Navega} type='submit'>search</span>
+                <span 
+                    className="material-symbols-outlined" 
+                    onClick={Navega} 
+                    type='submit'
+                    >search
+                </span>
             </div>
         </div>
     )
